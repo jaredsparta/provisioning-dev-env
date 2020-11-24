@@ -10,4 +10,8 @@ Vagrant.configure("2") do |config|
   config.hostsupdater.aliases = ["development.local"]
 
   config.vm.synced_folder "app", "/app"
+
+  #runs a .sh file, paths are relative to the vagrantfile
+  config.vm.provision "shell", path: "environment/provision.sh"
+
 end
