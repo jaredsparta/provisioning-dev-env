@@ -1,2 +1,4 @@
 *.log
 .vagrant
+starter-code/*.log
+starter-code/.vagrant
